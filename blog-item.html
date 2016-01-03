@@ -41,8 +41,8 @@
                                 <li><a href="https://www.facebook.com/civimechengineering" target="_blank"><i class="fa fa-facebook"></i></a></li>
                             </ul>
                             <div class="search">
-                                <form role="form" onsubmit="searchQuery(this);">
-                                    <input type="text" class="search-form" autocomplete="off" placeholder="Search">
+                                <form role="form" onsubmit="javascript:void(0);">
+                                    <input type="text" class="search-form" onkeyup="searchQuery(event);" autocomplete="off" placeholder="Search">
                                     <i class="fa fa-search"></i>
                                 </form>
                            </div>
@@ -182,7 +182,7 @@
                                 <p>Make sure you enter the(*)required information where indicate.HTML code is not allowed</p>
                             </div>
 
-                            <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php" role="form" onsubmit="searchQuery(this);">
+                            <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php" role="form" onsubmit="javascript:void(0);">
                                 <div class="row">
                                     <div class="col-sm-5">
                                         <div class="form-group">
@@ -214,7 +214,7 @@
 
                 <aside class="col-md-4">
                     <div class="widget search">
-                        <form role="form" onsubmit="searchQuery(this);">
+                        <form role="form" onsubmit="javascript:void(0);">
                                 <input type="text" class="form-control search_box" autocomplete="off" placeholder="Search Here">
                         </form>
                     </div><!--/.search-->

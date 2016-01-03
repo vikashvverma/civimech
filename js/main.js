@@ -1,7 +1,11 @@
 function searchQuery(ev){
-	var query=ev.children[0].value.split(" ").join("+");
-	window.location="http://www.google.com?q=site%3Awww.civimechengineering.com.in+"+query;
-	return 0;
+	if(ev.keyCode==13){
+		var query=$('.search-form').val().split(" ").join("+");
+		window.location="http://www.google.com?q=site%3Awww.civimechengineering.com.com+"+query;
+	}
+	// var query=ev.children[0].value.split(" ").join("+");
+	//
+	// window.location.assign("http://www.google.com?q=site%3Awww.civimechengineering.com.in+"+query);
 };
 
 jQuery(function($) {'use strict',
