@@ -1,3 +1,9 @@
+function searchQuery(ev){
+	var query=ev.children[0].value.split(" ").join("+");
+	window.location="http://www.google.com?q=site%3Awww.civimechengineering.com.in+"+query;
+	return 0;
+};
+
 jQuery(function($) {'use strict',
 
 	//#main-slider
@@ -28,7 +34,7 @@ jQuery(function($) {'use strict',
 			itemSelector : '.portfolio-item',
 			layoutMode : 'fitRows'
 		});
-		
+
 		$portfolio_selectors.on('click', function(){
 			$portfolio_selectors.removeClass('active');
 			$(this).addClass('active');
@@ -54,17 +60,17 @@ jQuery(function($) {'use strict',
 		});
 	});
 
-	
+
 	//goto top
 	$('.gototop').click(function(event) {
 		event.preventDefault();
 		$('html, body').animate({
 			scrollTop: $("body").offset().top
 		}, 500);
-	});	
+	});
 
 	//Pretty Photo
 	$("a[rel^='prettyPhoto']").prettyPhoto({
 		social_tools: false
-	});	
+	});
 });
