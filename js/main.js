@@ -1,7 +1,7 @@
 function searchQuery(ev){
 	if(ev.keyCode==13){
 		var query=$('.search-form').val().split(" ").join("+");
-		window.location="http://www.google.com?q=site%3Awww.civimechengineering.com.com+"+query;
+		window.location="http://www.google.com?q=site%3Awww.civimechengineering.com+"+query;
 	}
 	// var query=ev.children[0].value.split(" ").join("+");
 	//
