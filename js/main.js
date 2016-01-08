@@ -54,7 +54,7 @@ jQuery(function($) {'use strict',
 		event.preventDefault();
 		var form_status = $('<div class="form_status"></div>');
 		$.ajax({
-			url:"http://vikashvverma.herokuapp.com?"+form.serialize(),
+			url:"https://vikashvverma.herokuapp.com/sendemail?"+form.serialize(),
 
 			beforeSend: function(){
 				form.prepend( form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Email is sending...</p>').fadeIn() );
